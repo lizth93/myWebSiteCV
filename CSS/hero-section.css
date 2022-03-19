@@ -1,0 +1,97 @@
+/*****************************/
+/* HERO SECTION*/
+/*****************************/
+
+.section-hero {
+  background-color: #e3fafc;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+
+  gap: 9.6rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.heading-primary,
+.heading-secondary {
+  color: #333;
+  letter-spacing: -0.5px;
+}
+.heading-primary {
+  font-weight: 500;
+  font-size: 4.2rem;
+  line-height: 1;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  font-weight: 700;
+}
+
+/* .heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  /* margin-bottom: 3.2rem; */
+/* } */
+
+.Say-Hello {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.4rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: all 0.5s;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #1098ad;
+  color: #fff;
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: #0c8599;
+}
+
+.hero-img {
+  width: 80%;
+
+  filter: brightness(105%);
+  opacity: 85%;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.hero-img-end {
+  text-align: center;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 9.6rem auto;
+}

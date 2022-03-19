@@ -1,0 +1,412 @@
+/**************************/
+/*Below 1408px smaller desktops */
+/**************************/
+
+@media (max-width: 88em) {
+  .hero {
+    max-width: 120rem;
+    gap: 6.2rem;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+    line-height: 1.2;
+  }
+
+  .hero-description {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 3.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .education-img {
+    width: 20%;
+  }
+  .udemy-logo {
+    width: 12%;
+  }
+}
+
+/**************************/
+/*Below 1200px landscape Tablets */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56%;
+  }
+
+  .grid {
+    row-gap: 6.2rem;
+    column-gap: 4.8rem;
+  }
+  .subheading {
+    font-size: 1.4rem;
+  }
+  .heading-secondary {
+    font-size: 3rem;
+  }
+  .logo-title {
+    font-size: 2rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .education-img {
+    width: 23%;
+  }
+  .udemy-logo {
+    width: 15%;
+  }
+}
+
+/**************************/
+/*Below 1008px (Tablets) */
+/**************************/
+
+@media (max-width: 63em) {
+  .hero {
+    grid-template-columns: 1fr 1.5fr;
+    padding: 0 4.8rem;
+  }
+
+  .hero-img {
+    width: 90%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  .hero-img-end {
+    text-align: end;
+  }
+  /* .grid--4--cols {
+    grid-template-columns: repeat(8, 1fr);
+  } */
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 3.2rem;
+
+    /* margin-bottom: 9.6rem; */
+  }
+
+  .grid--experiences {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4.8rem;
+    row-gap: 3.2rem;
+  }
+
+  .elemt-3 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .elemt-4 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  .education-img {
+    width: 15%;
+  }
+  .udemy-logo {
+    width: 8%;
+  }
+
+  .education-img-box {
+    align-self: start;
+    margin-bottom: 0;
+    margin-top: 3.2rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 99999;
+  }
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px); /*chrome*/
+    -webkit-backdrop-filter: blur(5px); /*Safary*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    /* display: none; */ /*this property dont let any transitions at all*/
+
+    /*1. Hide it visually*/
+    opacity: 0; /*is better this one*/
+    /*2) Make it unnaccesibe to mouse and keyboard*/
+    pointer-events: none;
+
+    /*3) hide it from screen readers*/
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    z-index: 99999;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translate(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .grid--4--cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4.8rem;
+  }
+
+  .section-skills,
+  .about-me {
+    padding: 0 4.8rem;
+  }
+
+  .skill-img {
+    row-gap: 9.6rem;
+
+    width: 15%;
+  }
+
+  .grid--2--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .list-contact {
+    flex-direction: row;
+  }
+
+  /* } */
+  /* .skills {
+    grid-column: span 2;
+  } */
+}
+
+/**************************/
+/*Below 704 (smaller Tablets) */
+/**************************/
+@media (max-width: 44em) {
+  html {
+    font-size: 50%;
+  }
+  .logo-footer {
+    width: 100%;
+    justify-self: center;
+  }
+  .logo {
+    width: 80%;
+  }
+
+  .heading-primary {
+    font-size: 3rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-img {
+    width: 45%;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  .hero-img-end {
+    text-align: center;
+  }
+  .section-hero {
+    padding: 4.8rem 0 7.6rem 0;
+  }
+  .container {
+    margin: 7.6rem auto;
+  }
+
+  .education-img-box {
+    text-align: left;
+    margin-bottom: 3.2rem;
+  }
+
+  /* .education-img-udemy {
+    width: 20%;
+  } */
+
+  .check-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #1098ad;
+  }
+  .logo-text,
+  .objective-description,
+  .copyright {
+    line-height: 1.5;
+  }
+
+  .section-skills,
+  .about-me {
+    padding: 0px 3.2rem;
+  }
+
+  .section-experiences {
+    padding: 7.6rem;
+  }
+
+  .education-img-box {
+    margin-bottom: 0.2rem;
+  }
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-icon,
+  .footer-icon {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+  .list-contact {
+    font-size: 1.2rem;
+    gap: 1.2rem;
+    flex-direction: column;
+  }
+}
+
+/**************************/
+/*Below 550 (smaller Tablets) */
+/**************************/
+@media (max-width: 35em) {
+  .logo {
+    width: 80%;
+  }
+
+  .logo-footer {
+    width: 60%;
+    justify-self: center;
+  }
+  .header {
+    padding: 0 2.2rem;
+  }
+  .btn-mobile-nav {
+    padding: 0.8rem;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .section-hero {
+    padding: 2.8rem 0 7.6rem 0;
+  }
+  .hero-img {
+    width: 45%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .container {
+    margin: 4.6rem auto;
+  }
+  .grid--4--cols {
+    grid-template-columns: 1fr;
+    row-gap: 3.8rem;
+  }
+
+  .section-education {
+    margin-top: 1.2rem;
+  }
+
+  .skill-img {
+    width: 12%;
+    margin-bottom: 1.6rem;
+  }
+
+  .logo-title,
+  .title {
+    margin-bottom: 1rem;
+  }
+
+  .grid--experiences {
+    grid-template-columns: 1fr;
+    row-gap: 1.2rem;
+  }
+
+  .img-UNAM {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .elemt-2 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .img-udemy-1 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  .elemt-3 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+
+  .img-udemy-2 {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+
+  .elemt-4 {
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+
+  .education-img {
+    width: 10%;
+  }
+  .udemy-logo {
+    width: 6%;
+  }
+
+  .grid--5--cols {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .logo-footer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    grid-column: span 4;
+  }
+
+  .section-skills,
+  .about-me {
+    padding: 0px 1.2rem;
+  }
+  .section-experiences {
+    padding: 4.8rem;
+  }
+
+  .contact-text-box {
+    padding: 3.8rem 3.4rem 3.4rem 2.4rem;
+  }
+}
