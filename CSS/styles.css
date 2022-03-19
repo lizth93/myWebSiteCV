@@ -10,7 +10,6 @@
 
 *:focus {
   outline: none;
-  outline: 4px dotted #0b7285;
   outline-offset: 8px;
   box-shadow: 0 0 0 0.8rem rgba(12, 132, 153, 0.267);
 }
