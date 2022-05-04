@@ -67,16 +67,31 @@
   cursor: pointer;
 }
 
+.btn-learn {
+  color: #0c8599;
+}
+
+.btn-learn:hover {
+  color: #04282e;
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0, 0.2);
+}
+
 .btn--full:link,
 .btn--full:visited {
   background-color: #1098ad;
   color: #fff;
 }
-.btn--full:hover,
-.btn--full:active {
+.btn--full:hover {
   background-color: #0c8599;
+  transform: translateY(-0.3rem);
 }
 
+.btn--full:active,
+.btn--full:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0, 0.5);
+}
 .hero-img {
   width: 80%;
 
