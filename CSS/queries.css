@@ -2,7 +2,7 @@
 /*Below 1408px smaller desktops */
 /**************************/
 
-@media (max-width: 88em) {
+@media only screen and (max-width: 88em) {
   .hero {
     max-width: 120rem;
     gap: 6.2rem;
@@ -35,7 +35,7 @@
 /*Below 1200px landscape Tablets */
 /**************************/
 
-@media (max-width: 75em) {
+@media only screen and (max-width: 75em) {
   html {
     font-size: 56%;
   }
@@ -72,7 +72,7 @@
 /*Below 1008px (Tablets) */
 /**************************/
 
-@media (max-width: 63em) {
+@media only screen and (max-width: 63em) {
   .hero {
     grid-template-columns: 1fr 1.5fr;
     padding: 0 4.8rem;
@@ -124,6 +124,7 @@
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-in;
+
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
