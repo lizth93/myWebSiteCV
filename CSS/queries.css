@@ -86,31 +86,10 @@
   .hero-img-end {
     text-align: end;
   }
-  /* .grid--4--cols {
-    grid-template-columns: repeat(8, 1fr);
-  } */
 
   .grid {
     column-gap: 4.8rem;
     row-gap: 3.2rem;
-
-    /* margin-bottom: 9.6rem; */
-  }
-
-  .grid--experiences {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 4.8rem;
-    row-gap: 3.2rem;
-  }
-
-  .elemt-3 {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-
-  .elemt-4 {
-    grid-column: 2/3;
-    grid-row: 4/5;
   }
 
   .education-img {
@@ -145,14 +124,8 @@
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-in;
-    /* display: none; */ /*this property dont let any transitions at all*/
-
-    /*1. Hide it visually*/
-    opacity: 0; /*is better this one*/
-    /*2) Make it unnaccesibe to mouse and keyboard*/
+    opacity: 0;
     pointer-events: none;
-
-    /*3) hide it from screen readers*/
     visibility: hidden;
   }
 
@@ -181,11 +154,6 @@
     font-size: 3rem;
   }
 
-  .grid--4--cols {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 4.8rem;
-  }
-
   .section-skills,
   .about-me {
     padding: 0 4.8rem;
@@ -204,11 +172,6 @@
   .list-contact {
     flex-direction: row;
   }
-
-  /* } */
-  /* .skills {
-    grid-column: span 2;
-  } */
 }
 
 /**************************/
@@ -257,10 +220,6 @@
     text-align: left;
     margin-bottom: 3.2rem;
   }
-
-  /* .education-img-udemy {
-    width: 20%;
-  } */
 
   .check-icon {
     width: 3rem;
@@ -332,10 +291,6 @@
   }
   .container {
     margin: 4.6rem auto;
-  }
-  .grid--4--cols {
-    grid-template-columns: 1fr;
-    row-gap: 3.8rem;
   }
 
   .section-education {
