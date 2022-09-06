@@ -3,6 +3,13 @@
 /**************************/
 
 @media only screen and (max-width: 88em) {
+  .grid--experiences {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    column-gap: 4.8rem;
+  }
+
   .hero {
     max-width: 120rem;
     gap: 6.2rem;
