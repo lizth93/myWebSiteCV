@@ -340,7 +340,16 @@
 
   .elemt-4 {
     grid-column: 1/2;
-    grid-row: 8/9;
+    grid-row: 9/10;
+  }
+
+  .elemt-5 {
+    grid-column: 1/2;
+    grid-row: 11/12;
+  }
+  .elemt-6 {
+    grid-column: 1/2;
+    grid-row: 13/14;
   }
 
   .education-img {
